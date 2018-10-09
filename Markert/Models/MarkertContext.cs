@@ -30,5 +30,7 @@ namespace Markert.Models
         public System.Data.Entity.DbSet<Markert.Models.Product> Products { get; set; }
 
         public System.Data.Entity.DbSet<Markert.Models.Supplier> Suppliers { get; set; }
+
+        public System.Data.Entity.DbSet<Markert.Models.Customer> Customers { get; set; }
     }
 }

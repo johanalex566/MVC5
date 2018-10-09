@@ -9,10 +9,12 @@ namespace Markert.Models
         [Key]
         public int ProductID { get; set; }
         public string Description { get; set; }
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
         [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
         public DateTime LastBuy { get; set; }
         public float Stock { get; set; }
+        [DataType(DataType.MultilineText)]
         public string Remarks { get; set; }
         public virtual ICollection<SupplierProduct> SupplierProducts { get; set; }
     }
